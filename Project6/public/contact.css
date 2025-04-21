@@ -1,0 +1,100 @@
+.contact-container {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container h1 {
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.lept {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.lept img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+}
+
+.rite {
+    max-width: 800px;
+    flex: 1;
+    margin-top: 30px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Responsive Web Design */
+@media screen and (max-width: 1024px) {
+    .contact-container {
+        margin: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lept img {
+        height: 500px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        margin: 20px;
+    }
+
+    .lept img {
+        height: 400px;
+    }
+
+    .rite {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-container {
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .lept img {
+        height: 400px;
+    }
+
+    .rite {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contact-container {
+        margin: 5px;
+    }
+
+    .lept img {
+        height: 250px;
+    }
+}

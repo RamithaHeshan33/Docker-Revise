@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramitha Heshan</title>
+    <link rel="shortcut icon" href="img/dp1.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video class="position-fixed top-0 start-0 w-100 h-100 object-fit-cover z-n1" autoplay loop muted playsinline>
+        <source src="bg2.mp4" type="video/mp4">
+    </video>
+
+    <!-- Blur Overlay -->
+    <div class="position-fixed top-0 start-0 w-100 h-100" style="backdrop-filter: blur(20px);"></div>
+    
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fs-4 fw-bold" href="index.html">Ramitha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fs-6 fw-bold" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="blog-container position-relative">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" data-aos='fade-up'>
+              <div class="card h-100">
+                <img src="./blog/blog.jpg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title">Want to master GitHub?</h5>
+                  <p class="card-text">Learn essential Git commands like <b>clone</b>, <b>status</b>, <b>add</b>, <b>commit</b>, and <b>push</b> to manage your projects efficiently. This beginner-friendly guide will help you collaborate seamlessly and track changes with ease! 💡</p>
+
+                  <button class="btn btn-primary" type="submit" onclick="window.open('https://medium.com/@ramitha33/most-using-git-commands-504c6d365797', '_blank')">Read More</button>
+
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos='fade-up'>
+              <div class="card h-100">
+                <img src="./blog/change netbeans.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">How to Change the JDK Version in NetBeans</h5>
+                  <p class="card-text">Need to switch JDK versions in NetBeans? This guide walks you through the process step by step, from locating your current JDK version to modifying the <b>netbeans.conf</b> file to set a new JDK path. 🔧🚀</p>
+
+                  <button class="btn btn-primary" type="submit" onclick="window.open('https://medium.com/@ramitha33/how-to-change-the-jdk-version-in-netbeans-55d9cbb8b773', '_blank')">Read More</button>
+
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos='fade-up'>
+              <div class="card h-100">
+                <img src="./blog/github foundation.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Want to get GitHub certified for free?</h5>
+                  <p class="card-text">Learn how to take the GitHub Foundations Exam without paying a dime! This guide covers the registration process, free preparation resources, exam structure, and FAQs. Start your journey today and showcase your GitHub expertise! 🚀</p>
+
+                  <button class="btn btn-primary" type="submit" onclick="window.open('https://medium.com/@ramitha33/github-foundation-exam-for-free-35d271585bab', '_blank')">Read More</button>
+
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos='fade-up'>
+              <div class="card h-100">
+                <img src="./blog/oop concepts.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">What are the OOP Concepts?</h5>
+                  <p class="card-text">Learn the four main Object-Oriented Programming (OOP) concepts—<b>Inheritance, Abstraction, Polymorphism, and Encapsulation.</b> This article provides clear explanations with Java code examples to help you understand these fundamental principles of OOP. 🚀</p>
+
+                  <button class="btn btn-primary" type="submit" onclick="window.open('https://medium.com/@ramitha33/what-are-the-oop-concepts-5e60098e82c6', '_blank')">Read More</button>
+
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos='fade-up'>
+              <div class="card h-100">
+                <img src="./blog/pull req temp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">How to Create a Pull Request Template for Your GitHub Repository</h5>
+                  <p class="card-text">Want to streamline your pull request process? Learn how to create a PR template for your GitHub repository in just a few steps! 🚀</p> <br><br>
+
+                  <button class="btn btn-primary" type="submit" onclick="window.open('https://medium.com/@ramitha33/how-to-create-a-pull-request-template-for-your-github-repository-bc5141fa385e', '_blank')">Read More</button>
+
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos='fade-up'>
+              <div class="card h-100">
+                <img src="./blog/spring.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Need to free up port 8080 for your Spring Boot application?</h5>
+                  <p class="card-text">This guide walks you through two simple methods: changing the port in <b>application.properties</b> or forcefully terminating the process using the command line. Learn how to resolve port conflicts and keep your application running smoothly! 🚀</p>
+
+                  <button class="btn btn-primary" type="submit" onclick="window.open('https://medium.com/@ramitha33/how-to-kill-a-process-running-on-port-number-8080-1f4ff9cbb8dc', '_blank')">Read More</button>
+
+
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <br><br><br>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <footer class='footer position-relative'>
+        <div class='footer-container'>
+            © Made By Ramitha Heshan - 2025
+        </div>
+    </footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

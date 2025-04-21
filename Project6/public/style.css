@@ -1,0 +1,214 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    height: 100vh;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-container {
+    margin-left: 120px;
+    display: flex;
+    gap: 75px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.intro {
+    max-width: 700px;
+    margin-top: 120px;
+}
+
+.intro p {
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;   
+}
+
+.intro span {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.social {
+    margin-top: 150px;
+}
+
+.social i {
+    color: black;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.social i:hover {
+    color: #5900ff;
+    transition: 250ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto 100px;
+    margin-top: -40px;
+}
+
+.footer-container {
+    text-align: center;
+    height: auto;
+    
+}
+
+/* Responsive Web Design */
+
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        margin-left: 50px;
+        gap: 50px;
+    }
+
+    .intro {
+        margin-top: 50px;
+    }
+
+    .social {
+        margin-top: 100px;
+    }
+
+    .footer {
+        margin: auto 50px;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        display: inline;
+    }
+
+    .intro {
+        text-align: center;
+        margin: 30px;
+    }
+
+    .intro span {
+        font-size: 20px;
+    }
+
+    .intro h1 {
+        font-size: 50px;
+    }
+
+    .intro p {
+        font-size: 30px;
+        text-align: justify;
+    }
+
+    .social {
+        justify-content: center;
+        display: flex;
+        margin-bottom: 20px;
+        gap: 50px;
+    }
+
+    .social i {
+        font-size: 30px;
+    }
+
+    .footer {
+        margin: auto 20px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hero-container {
+        margin: 10px;
+        gap: 10px;
+        display: inline;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro {
+        margin: 15px;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro p {
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    .social {
+        justify-content: center;
+        display: flex;
+        margin-bottom: 20px;
+        gap: 50px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .footer {
+        margin: auto 10px;
+        margin-top: 0;
+    }
+}

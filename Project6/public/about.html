@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramitha Heshan</title>
+    <link rel="shortcut icon" href="img/dp1.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .content-section {
+            display: none;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .active-btn {
+            background-color: #007bff !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video class="position-fixed top-0 start-0 w-100 h-100 object-fit-cover z-n1" autoplay loop muted playsinline>
+        <source src="bg2.mp4" type="video/mp4">
+    </video>
+
+    <!-- Blur Overlay -->
+    <div class="position-fixed top-0 start-0 w-100 h-100" style="backdrop-filter: blur(20px);"></div>
+    
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fs-4 fw-bold" href="index.html">Ramitha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fs-6 fw-bold" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Buttons -->
+    <div class="about-container position-relative text-center" data-aos="fade-down">
+        <div class="btn-group w-100">
+            <button class="btn btn-primary active-btn" onclick="showSection('education', this)">Education</button>
+            <button class="btn btn-primary" onclick="showSection('workshops', this)">Workshops</button>
+            <button class="btn btn-primary" onclick="showSection('certifications', this)">Certifications</button>
+        </div>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="container mt-4 position-relative">
+        <div id="education" class="content-sections container my-5">
+            <h3 class="text-center mb-4">Education</h3>
+            <div class="timeline position-relative">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="timeline-content">
+                        <h5>BSc in Software Engineering (Reading)</h5>
+                        <p>Cardiff Metropolitan University</p>
+                        <p style="margin-top: -10px;">2025 - Present</p>
+                        <i class="fas fa-graduation-cap"></i>
+                        <h5>Higher National Diploma in Software Engineering</h5>
+                        <p>Cardiff Metropolitan University</p>
+                        <p style="margin-top: -10px;">2023 - 2025</p>
+                        <p>I completed my HND, gaining hands-on experience in SQL, JavaScript, PHP, Power BI, and the MERN stack. During this journey, I developed various projects on web development and business analytics.</p>
+                    </div>
+                </div>
+                <!-- <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-university"></i></div>
+                    <div class="timeline-content">
+                        
+                    </div>
+                </div> -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                    <div class="timeline-content">
+                        <h5>Diploma in Psychology & Counselling</h5>
+                        <p>SITC Campus</p>
+                        <p style="margin-top: -10px;">2022 - 2023</p>
+                        <p>I completed a Diploma in Psychology & Counselling, gaining insights into human behavior, mental health, and effective communication. This knowledge enhances problem-solving skills and the ability to understand user needs. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+
+        <!-- Workshops Section -->
+        <div id="workshops" class="content-sections">
+            <h3>Workshops</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="./img/Workshops/js.png" class="card-img-top workshop-img" alt="JavaScript Workshop">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript Workshop</h5>
+                            <p class="card-text">Attended an interactive JavaScript workshop covering ES6+ concepts and best practices for front-end development.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="./img/Workshops/MS_jan.png" class="card-img-top workshop-img" alt="MS Champ January">
+                        <div class="card-body">
+                            <h5 class="card-title">MS Champ | January Month 🚀</h5>
+                            <p class="card-text">I had an amazing chance to attend the MS Champs January session at Microsoft Sri Lanka. The session was a great experience, and I was able to explore cutting-edge technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Image Modal (Inside Workshops Section) -->
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" alt="Workshop Image">
+            </div>
+        </div>
+
+        <div id="certifications" class="content-sections">
+            <h3>Certifications</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" data-aos="fade-up">
+                    <div class="card">
+                        <img src="./img/Certifications/" class="card-img-top workshop-img" alt="MS Champ January">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">MS Champ | January Month 🚀</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up">
+                    <div class="card">
+                        <img src="./img/Certifications/Coursera front-end (2)7SSVM5K73WMV_page-0001.jpg" class="card-img-top workshop-img" alt="MS Champ January">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">MS Champ | January Month 🚀</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up">
+                    <div class="card">
+                        <img src="./img/Certifications/Coursera front-end intro 6CZ94PVWLQVF_page-0001.jpg" class="card-img-top workshop-img" alt="MS Champ January">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">MS Champ | January Month 🚀</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up">
+                    <div class="card">
+                        <img src="./img/Certifications/Coursera UX foundation google S8ARM9V5TSVN_page-0001.jpg" class="card-img-top workshop-img" alt="MS Champ January">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">MS Champ | January Month 🚀</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up">
+                    <div class="card mb-4">
+                        <img src="./img/Certifications/python beginner.png" class="card-img-top workshop-img" alt="MS Champ January">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Python for Beginners | UOM 🚀</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to Show Sections -->
+    <script>
+        function showSection(sectionId, btn) {
+            // Hide all sections
+            document.querySelectorAll('.content-sections').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Remove active button styling from all buttons
+            document.querySelectorAll('.btn-group .btn').forEach(button => {
+                button.classList.remove('active-btn');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+
+            // Highlight the active button
+            btn.classList.add('active-btn');
+        }
+
+        // Show "Education" section by default on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('education', document.querySelector('.btn-group .btn'));
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

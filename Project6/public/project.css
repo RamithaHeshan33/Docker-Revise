@@ -1,0 +1,83 @@
+.project-container {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.icons img{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.icons .right {
+    margin-top: 10px;
+}
+
+@keyframes smoothShake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-3px, 3px) rotate(-2deg); }
+    50% { transform: translate(3px, -3px) rotate(2deg); }
+    75% { transform: translate(-3px, 3px) rotate(-2deg); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  .right img {
+    display: inline-block;
+    animation: smoothShake 1s ease-in-out infinite;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Web Design */
+
+@media screen and (max-width: 768px) {
+    .project-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .project-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .icons img{
+        width: 50px;
+        height: 50px;
+        margin: 8px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .project-container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .icons img{
+        width: 50px;
+        height: 50px;
+        margin: 8px;
+    }
+}
+
