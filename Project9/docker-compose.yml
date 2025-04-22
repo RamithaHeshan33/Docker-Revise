@@ -1,0 +1,14 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URL=mongodb+srv://animals:sw89mF8tYVnPuhvH@cluster0.n2tvp.mongodb.net/AnimalDB?retryWrites=true&w=majority
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend

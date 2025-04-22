@@ -1,0 +1,27 @@
+.updateBtn {
+    margin-top: 20px;
+    color: #000;
+    background-color: #61dafb;
+    transition: background-color 300ms, color 300ms;
+}
+
+.updateBtn:hover {
+    background-color: #282c34;
+    color: white;
+}
+
+.update-modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.update-title {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+}
+
+.label {
+    margin-top: -10px;
+    margin-bottom: -15px;
+}

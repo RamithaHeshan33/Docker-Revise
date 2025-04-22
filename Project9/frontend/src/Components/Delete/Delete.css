@@ -1,0 +1,19 @@
+.table {
+    display: grid;
+    margin: 0 100px;
+    color: white;
+}
+
+.updateBtn {
+    text-decoration: none;
+}
+
+table {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);;
+}
+
+.row {
+    color: white;
+}
+

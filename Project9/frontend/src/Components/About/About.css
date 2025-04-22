@@ -1,0 +1,161 @@
+body {
+    background-color: #282c34;
+    color: white;
+    height: 100vh;
+}
+
+.about{
+    margin: 50px 100px 0 100px;
+    display: flex;
+}
+
+form {
+    width: 600px;
+    height: auto;
+    margin: 50px 0 0 0px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.label {
+    color: white;
+    
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.about-image img{
+    width: 1000px;
+    height: 600px;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 1200px) {
+    .about{
+        position: relative;
+        margin: 50px 50px 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 700px;
+        height: auto;
+        margin: 30rem 0 0 0px;
+        margin-bottom: 50px;
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 20px;
+        text-align: justify;
+        position: relative;
+        z-index: 1; /* Ensures the form is above other content */
+        
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        position: absolute;
+        top: -50px; /* Adjust to place the image over the form */
+        left: 60%;
+        transform: translateX(-50%);
+        width: 800px;
+        
+    }
+
+    .about-image img{
+        width: 600px;
+        height: 600px;
+        margin-top: 30px;
+        z-index: 2;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .about{
+        margin: 50px 20px 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        margin-left: 30px;
+        margin-bottom: 50px;
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 20px;
+        text-align: justify;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .about-image img{
+        width: 600px;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .about{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 300px;
+        margin: 250px 0 0 100px;
+        margin-bottom: 50px;
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 20px;
+        text-align: justify;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .about-image img{
+        width: 300px;
+        height: auto;
+        margin: 70px 0 0 220px;
+    }
+    
+}
